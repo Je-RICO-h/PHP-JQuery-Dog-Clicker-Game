@@ -1,0 +1,223 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    height: 130%;
+    overflow-y: none;
+}
+
+#background{
+    height: 160%;
+    min-height: 1430px;
+}
+
+section{
+    margin-top: 18%;
+    width: 100%;
+    height: 50%;
+    display: block;
+    margin-bottom: 18%;
+}
+
+section button{
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 360px;
+    background-color: grey;
+    color: white;
+    font-size: 1.2em;
+    top: 0%;
+    left: 20%;
+    float: right;
+}
+
+.clicker p{
+    display: inline-block;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    margin-top: 120px;
+}
+
+section p:nth-child(3){
+    left: 57%;
+}
+
+.clicker{
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    left: 46.2%;
+}
+
+form{
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(150,150,150,0.5);
+    padding-left: 8px;
+    padding-top: 4px;
+    border-top-left-radius: 10px;
+    padding-bottom: 4px;
+    bottom: 0%;
+    right: 0%;
+}
+
+input:nth-child(1){
+    width: 70px;
+    height: 40px;
+    border: 1px;
+    background-image: linear-gradient(to bottom right,rgba(70,70,70,1),rgba(30,30,30,1),rgba(50,50,50,1));
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+input:nth-child(2){
+    margin-right: 5px;
+    width: 300px;
+    height: 25px;
+    background-color: rgba(50,50,50,0.9);
+    color: white;
+    border: none;
+    font-family: sans-serif;
+}
+
+.upgrades{
+    background-color: rgba(100,100,100,0.5);
+    width: 100%;
+    height: 550px;
+    display: block;
+    position: relative;
+}
+
+.title{
+    width: 100%;
+    height: 20%;
+    background-color: rgba(50,50,50,0.5);
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 1%;
+    margin-bottom: 50px;
+}
+
+.autoclick{
+    width: 100%;
+    height: 30%;
+    display: block;
+    position: relative;
+    background-color: rgba(20,20,20,0.8)
+}
+
+.picture,.text,.button{
+    width: 20%;
+    height: 100%;
+    display: block;
+    position: relative;
+    border-right: 3px solid grey;
+    float: left;
+}
+
+.picture{
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.a_title{
+    display: inline-block;
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    text-align: center;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.text{
+    width: 60%;
+    color: white;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 3.5%;
+}
+
+.button{
+    border: none;
+}
+
+.autoclick button{
+    width: 100px;
+    height: 50px;
+    display: block;
+    background-color: rgba(150,150,150,0.5);
+    color: white;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 2px;
+    float: right;
+    margin-right: 125px;
+    margin-top: 52px;
+    cursor: pointer;
+}
+
+.alert{
+    width: 20%;
+    min-width: 258px;
+    height: 0%;
+    background-image: linear-gradient(to bottom right,rgba(18,18,18,1),rgba(40,40,40,1),rgba(70,70,70,1),rgba(20,20,20,1),rgba(30,30,30,1));
+    position: absolute;
+    display: block;
+    top: 0%;
+    z-index: 1;
+    left: 40%;
+    border-radius: 5px;
+    transition: height 1s ease-in;
+}
+
+.alert p{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    display: none;
+    padding-top: 6%;
+    text-shadow: 2px 2px 2px black;
+}
+
+@media only screen and (max-width: 1400px){
+    .picture{
+        padding-left: 30px;
+    }
+    .autoclick button{
+        margin-right: 75px;
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    .title{
+        font-size: 3.6em;
+    }
+    .a_title{
+        font-size: 1.4em;
+    }
+    .text{
+        font-size: 1.2em;
+        padding-top: 5%;
+    }
+}

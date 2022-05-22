@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------------------------------------- */
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,rgba(33,33,33,1),rgba(13,13,13,0.9));
+    display: block;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+.lines{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: block;
+}
+
+.grid{
+    width: 8.33%;
+    height: 100%;
+    float: right;
+    border-right: 3px solid white;
+    z-index: 10;
+    display: block;
+}
+
+.grid:first-child{
+    border-right: none;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-image: repeating-linear-gradient(to bottom right,rgba(70,70,70,0.8),rgba(40,40,40,0.9),rgb(10,10,10),rgba(60,60,60,0.8),rgb(50,50,50),rgba(80,80,80,0.9));
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.logo{
+    width: 10%;
+    min-width: 150px;
+    height: 100%;
+    margin-left: 5px;
+    position: absolute;
+    display: block;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.clock{
+    width: 15%;
+    min-width: 159px;
+    height: 100%;
+    background-color: rgba(150,150,150, 0.5);
+    border-radius: 15px;
+    display: block;
+    left: 42.5%;
+    position: absolute;
+    text-align: center;
+    padding-top: 13px;
+    font-size: 2em;
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.help{
+    width: 5%;
+    min-width: 69px;
+    height: 40px;
+    right: 1%;
+    margin-top: 10px;
+    display: block;
+    position: absolute;
+    border:none;
+    background-color: rgba(160,160,160,0.9);
+    border-radius: 3px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px black;
+    cursor: pointer;
+}
+
+nav{
+    margin-top: -4px;
+    width: 100%;
+    height: 35px;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(80,80,80,0.8);
+    box-shadow: 0px 1px 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav a{    
+    font-size: 1.5em;
+    display: inline-block;
+    border-right: 4px solid #696969;
+    padding-right: 20px;
+    text-align: center;
+    margin-left: 10px;
+    padding-bottom: 7px;
+    padding-top: 4px;
+    text-shadow: 1px 1px 1px black;
+}
+
+nav a:nth-child(3){
+    float: right;
+}
+
+nav a:last-child{
+    font-size: 1.3em;
+    border: none;
+    margin-left: 17%;
+    color: red;
+}
+
+aside{
+    width: 25%;
+    height: 70%;
+    display: none;
+    position: absolute;
+    background-color: rgba(150,150,150,0.5);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 2px solid #3D3D3D;
+    right: 0%;
+    margin-top: 120px;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    display: block;
+    position: fixed;
+    color: rgb(140,140,140);
+    padding-top: 7px;
+    padding-left: 10px;
+    background-image: repeating-linear-gradient(to right,rgba(40,40,40,0.9),rgb(10,10,10),rgba(60,60,60,0.8),rgb(50,50,50),rgba(80,80,80,0.9));
+    bottom: 0%;
+}
+
+footer small:last-child{
+    position: absolute;
+    right: 0%;
+    margin-right: 15px;
+}
+
+a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 900px){
+    nav a{
+        font-size: 1em;
+        padding-top: 6px;
+        padding-bottom: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px){  /* Tablets */
+    .clock{
+        font-size: 1.5em;
+        padding-top: 18px;
+        left: 35%;
+    }
+    .grid:nth-child(8),.grid:nth-child(9),.grid:nth-child(10),.grid:nth-child(11),.grid:nth-child(12){
+        display: none;
+    }
+    .grid{
+        width: 14.28%;
+    }
+}
+
+@media only screen and (max-width: 400px){ /* Mobile */
+    .clock{
+        font-size: 1em;
+        padding-top: 20px;
+        min-width: 50px;
+        width: 100px;
+        left: 40%;
+    }
+    small{
+        font-size: 0.8em;
+    }
+    .grid:nth-child(5),.grid:nth-child(6),.grid:nth-child(7){
+        display: none;
+    }
+    .grid{
+        width: 25%;
+    }
+}
